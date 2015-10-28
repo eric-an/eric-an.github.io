@@ -1,0 +1,133 @@
+/* Navigation Bar */
+body {
+	position: relative;
+  font-size: 100%;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.navbar {
+  background-color: #FFF
+}
+
+.nav a {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  transition: color 600ms;
+}
+
+.portfolio {
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 13px;
+}
+
+.portfolio a {
+  color: white;
+  padding: 15px;
+}
+
+.portfolio a:hover {
+  text-decoration: none;
+}
+
+.rightlinks {
+	float: right;
+}
+
+/* Header */
+.headervideo {
+  position: relative;
+  padding-top: 0px;
+  margin: 0px;
+}
+
+#bg_video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .95;
+  z-index: -100;
+}
+
+#vidpause {
+  position: absolute;
+  background-color: Transparent;
+  color: #FFF;
+  border: none;
+  outline: none;
+  right: 0;
+  padding-right: 1.6em;
+  padding-top: 7.1em;
+  font-size: 3em;
+  z-index: 1;
+}
+
+.overlay_content {
+  position: absolute;
+  top: 16em;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.overlay_content h1 {
+  color: #FFF;
+  font-family: 'Rock Salt', cursive;
+  font-size: 8em;
+  text-align: center;
+  text-shadow: 1px 1px  #000000;
+
+}
+
+.overlay_content h2 {
+  color: #FFF;
+  font-size: 6em;
+  text-align: center;
+  text-shadow: 1px 1px  #000000;
+  font-family: 'Rock Salt', cursive;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 26px;
+}
+
+@media only screen and (max-width: 800px) {
+  #bg_video {
+    display: none;
+  }
+
+  .headervideo {
+    background-image: url('../images/header_bg.png');
+    background-attachment: fixed;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    height: 25em;
+    margin-top: 5em;
+    opacity: .8;
+  }
+
+  .overlay_content {
+  position: absolute;
+  top: 9em;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.overlay_content h1 {
+  color: #FFF;
+  font-size: 3em;
+  text-align: center;
+}
+
+.overlay_content h2 {
+  color: #FFF;
+  font-size: 2em;
+  text-align: center;
+}
+}
