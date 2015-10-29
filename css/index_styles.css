@@ -3,10 +3,17 @@ body {
   font-size: 100%;
 }
 
-/* Navigation Bar */
 .container-fluid {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+
+/* Navigation Bar */
+#self_navbar {
+  z-index: 100;
+  position: fixed;
+  display: block;
 }
 .navbar {
   background-color: #FFF
@@ -14,81 +21,119 @@ body {
 .nav a {
   text-transform: uppercase;
   letter-spacing: .05em;
-  transition: color 600ms;
+  font-size: 1.7em;
+  margin-top: .27em;
 }
-.portfolio {
-  text-transform: uppercase;
-  font-size: 15px;
-  padding: 13px;
-}
-.portfolio a {
-  color: white;
-  padding: 15px;
-}
-.portfolio a:hover {
-  text-decoration: none; 
+.navbar-default .navbar-nav>li>a {
+  color: #000;
 }
 .rightlinks {
   float: right;
 }
+#contactbtn {
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  background: #005b96;
+  padding: 9px 16px 9px 16px;
+  text-decoration: none; 
+  margin: .7em;
+  border: 0;}
+#contactbtn:hover {
+  background: #6497b1;
+ }
 
-/* Header Video */
+
+/* Header Hero Video */
 .hero video {
   max-width: 100%;
   max-height: 100%;
-  opacity: .4; }
+  opacity: .9; }
+.video_bg {
+  margin-bottom: -2px; }
 .hero .intro {
-  top: 24%;
+  top: 25%;
   left: 0;
   padding: 3em;
   position: absolute;
   width: 100%;
   margin-right: 0;
-  margin-left: 0; }
-.hero h1 {
-  color: #fff;
-  font-size: 8em;
-  line-height: 1.5em;
-  letter-spacing: -0.025em;
-  font-weight: 300;
-  text-align: center; }
+  margin-left: 0; } 
 .hero p {
-  color: #fff;
-  font-size: 5em;
-  line-height: 1.75em;
+  position: relative;
+  color: #DBE4FB;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6em;
   font-weight: 200;
-  text-align: center;
-  margin-bottom: 2em; }
-
-@media only screen and (max-width: 800px) {
-  .video_bg {
-    display: none; }
-.hero {
-  background: url("../images/header_bg.png") no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 40em;
-  opacity: .4;
-}
-.hero h1 {
-  color: #fff;
-  font-size: 3em;
-  line-height: 1.5em;
-  letter-spacing: -0.025em;
-  font-weight: 300;
-  text-align: center; }
-.hero p {
-  color: #fff;
-  font-size: 2em;
-  line-height: 1.75em;
-  font-weight: 200;
-  text-align: center;
-  margin-bottom: 2em; }
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.3em; 
+  margin: 2% 38% 2% 0%;}
+p #videocontactbtn {
+  margin-top: 0;
+  margin-left: 30%;
+  text-transform: none;
+}  
+#videocontactbtn {
+  border-radius: 5px;
+  font-family: 'Raleway'; sans-serif;
+  color: #ffffff;
+  font-size: 19px;
+  background: #005b96;
+  padding: 11px 18px 11px 18px;
+  text-decoration: none; 
+  margin: .5em;
+  border: 0;}
+#videocontactbtn:hover {
+  background: #6497b1;
  }
 
 
-  #FAQ {
-  background: linear-gradient(to right, rgba(0,0,0,0), rgba(255,0,0,1));
+/* mobile navigation */
+@media only screen and (max-width: 800px) {
+  .video_bg {
+    display: none; }
+  .hero {
+    background: url("../images/header_bg.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 30em; 
+    opacity: .7; }
+  .hero .intro {
+    padding: 0;
+    top: 12%; }  
+  .hero p {
+    font-size: .7em;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 0;
+    margin-right: 20%; }
+  #self_navbar{
+    display: none; }  
+  #self_mobile { 
+    z-index: 100;
+    position: fixed;
+    display: block; }
+  #videocontactbtn {
+    border-radius: 2px;
+    font-family: 'Raleway'; sans-serif;
+    color: #ffffff;
+    font-size: 10px;
+    background: #005b96;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none; 
+    margin: .2em;
+    border: 0;}
+}
+
+#skills h1 {
+  text-align: center;
+}
+
+#skills p {
+  display: inline-block;
 }
 
 

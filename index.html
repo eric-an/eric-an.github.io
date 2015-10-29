@@ -6,47 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Eric An - Web Developer</title>
-
-	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="css/index_styles.css" rel="stylesheet">
   <link href="images/icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 </head>
-<body>
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="border:0">
-        <nav class="container-fluid">
-          <nav class="navbar-header" style ="background-color: #000; border: 0">
-						<img src="images/icon.png" width="70" height="70" alt="Eric An" class="visible-xs" style="float:left">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: #000">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </nav><!-- /navbar-header -->          
-          <nav class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <div class="portfolio">
-                  <a href="#">My Portfolio</a>
-                </div>
-              </li>
-            </ul>           
-            <ul class="rightlinks nav navbar-nav">
-              <li><a href="#about">About</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Work<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#work">Work 1</a></li>
-                  <li><a href="#work">Work 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#FAQ">FAQ</a></li>
-            </ul><!-- /nav navbar-nav -->
-          </nav><!-- /navbar-collapse collapse -->
-        </nav><!-- /container-fluid -->
-      </nav><!-- /navbar navbar-inverse navbar-fixed-top -->
+
+<body data-spy="scroll" data-target=".navbar">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="container-fluid">
+      <nav class="navbar-header">
+        <a href="#"><img src="images/self.png" id="self_navbar" width="120" height="120"></a>
+        <!-- mobile navigation -->
+        <img src="images/self_mobile.jpg" id="self_mobile"width="90" height="90" class="visible-xs visible-sm">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border: 0">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- /mobile navigation -->
+      </nav><!-- /navbar-header -->          
+      <nav class="navbar-collapse collapse">          
+        <ul class="rightlinks nav navbar-nav">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pipeline">In the Pipeline</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a button id="contactbtn" type="button" class="btn btn-default" href="#contact">Contact</a></li>
+        </ul><!-- /nav navbar-nav -->
+      </nav><!-- /navbar-collapse collapse -->
+    </nav><!-- /container-fluid -->
+  </nav><!-- /navbar navbar-inverse navbar-fixed-top -->
       <!-- /Navigation Bar -->
 
 <div class="container-fluid">
@@ -57,19 +50,54 @@
               <source src="videos/header_bg.mp4" type="video/mp4">
               <source src="videos/header_bg.ogv" type="video/ogg">        
       </video>
-    </div>
+    </div><!-- /video_bg -->
     <div class="row intro">
-      <div class="overlay_text">
-        <h1>Eric An</h1>
-        <p>Web Developer</p>
-      </div>
-    </div>
-  </section>
-</div>
+      <div class="overlay_text col-xs-12 col-s-12 col-md-12">
+        <h1></h1>
 
-<div class="container-fluid anchor" id="FAQ">
+        <p title="- Susan Schutz">"Take the power to walk in the forest and be a part of nature. Take the power to control your own life. No one else can do it for you."</p>
+        <p><a button type="button" id="videocontactbtn" class="btn btn-default" href="#contact">Hire Me</a></p>
 
-      <h1>FAQ</h1> 
-<p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
+      </div><!-- /overlay_text -->
+    </div><!-- /row intro -->
+  </section><!-- /hero -->
+</div><!-- /container-fluid -->
 
-     </div>
+  <div class="container-fluid anchor" id="skills">
+
+    <h1>Skills</h1> 
+      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
+
+  </div>
+
+  <div class="container-fluid anchor" id="portfolio">
+
+    <h1>Portfolio</h1> 
+      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
+  </div>
+
+  <div class="container-fluid anchor" id="pipeline">
+
+    <h1>In the Pipeline</h1> 
+      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
+  </div>  
+
+  <div class="container-fluid anchor" id="about">
+
+    <h1>About</h1> 
+      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
+  </div>
+
+  <div class="container-fluid anchor" id="contact">
+
+    <h1>Contact</h1> 
+      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
+  </div>
+
+  <!--jQuery Script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap core JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
