@@ -4,13 +4,15 @@
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!--[if lt IE 9]>
+  <script src="dist/html5shiv.js"></script>
+  <![endif]-->
   <title>Eric An - Web Developer</title>
   
   <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="css/index_styles.css" rel="stylesheet">
-  <link href="images/icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="images/self.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -33,7 +35,6 @@
         <ul class="rightlinks nav navbar-nav">
           <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pipeline">In the Pipeline</a></li>
           <li><a href="#about">About</a></li>
           <li><a button id="contactbtn" type="button" class="btn btn-default" href="#contact">Contact</a></li>
         </ul><!-- /nav navbar-nav -->
@@ -42,50 +43,129 @@
   </nav><!-- /navbar navbar-inverse navbar-fixed-top -->
       <!-- /Navigation Bar -->
 
-<div class="container-fluid">
-  <section class="hero">
-    <div class="video_bg">
-      <video loop muted autoplay poster="images/header_bg.png" id="bg_video">
-              <source src="videos/header_bg.webm" type="video/webm">
-              <source src="videos/header_bg.mp4" type="video/mp4">
-              <source src="videos/header_bg.ogv" type="video/ogg">        
-      </video>
-    </div><!-- /video_bg -->
-    <div class="row intro">
-      <div class="overlay_text col-xs-12 col-s-12 col-md-12">
-        <h1></h1>
-
-        <p title="- Susan Schutz">"Take the power to walk in the forest and be a part of nature. Take the power to control your own life. No one else can do it for you."</p>
-        <p><a button type="button" id="videocontactbtn" class="btn btn-default" href="#contact">Hire Me</a></p>
-
-      </div><!-- /overlay_text -->
-    </div><!-- /row intro -->
-  </section><!-- /hero -->
-</div><!-- /container-fluid -->
+  <div class="container-fluid">
+    <section class="hero">
+      <div class="video_bg">
+        <video loop muted autoplay poster="images/header_bg.png" id="bg_video">
+                <source src="videos/header_bg.webm" type="video/webm">
+                <source src="videos/header_bg.mp4" type="video/mp4">
+                <source src="videos/header_bg.ogv" type="video/ogg">        
+        </video>
+      </div><!-- /video_bg -->
+      <div class="row intro">
+        <div class="overlay_text col-xs-12 col-s-12 col-md-12">
+          <h1><span class="glyphicon glyphicon-tree-conifer"></span></h1>
+          <p title="- Susan Schutz">"Take the power to walk in the forest and be a part of nature. Take the power to control your own life. No one else can do it for you."</p>
+          <p><a button type="button" id="videocontactbtn" class="btn btn-default" href="#contact">Hire Me</a></p>
+        </div><!-- /overlay_text -->
+      </div><!-- /row intro -->
+    </section><!-- /hero -->
+  </div><!-- /container-fluid -->
 
   <div class="container-fluid anchor" id="skills">
-
     <h1>Skills</h1> 
-      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
-
-  </div>
+      <p><img src="images/html5_logo.png" width="130" height="150">
+      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing">
+      <img src="images/css3_logo.png" width="130" height="150">
+      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing">
+      <img src="images/js_logo.png" width="130" height="150">
+      <img src="images/beginner_gauge.png" width="160" height="90" class="gauge_spacing"></p>
+      <p><img src="images/ruby_logo.png" width="130" height="150">
+      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing">
+      <img src="images/ror_logo.png" width="115" height="135">
+      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing"></p>
+      <div id="skills_subset"> 
+        <h3>Introductory Knowledge</h3>
+        <p><img src="images/angularjs_logo.png" width="80" height="100">
+        <img src="images/json_logo.png" width="80" height="100">
+        <img src="images/jquery_logo.gif" width="80" height="100">
+        <img src="images/ajax_logo.png" width="130" height="80"></p>
+      </div>  
+  </div><!-- /container-fluid -->
 
   <div class="container-fluid anchor" id="portfolio">
-
-    <h1>Portfolio</h1> 
-      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
-  </div>
-
-  <div class="container-fluid anchor" id="pipeline">
-
-    <h1>In the Pipeline</h1> 
-      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
-  </div>  
+      <!-- Image Carousel -->
+      <div id="carousel-portfolio" class="carousel slide" data-ride="carousel" data-interval="10000">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <a href="www.google.com"><img src="images/portfolio_bg.jpg" alt="desk"></a>
+            <div class="carousel-caption">
+              <h3>Portfolio</h3>
+              <p>My mission is to continously develop my programming expertise so that I can produce high-quality responsive websites and applications that deliver a stable, fast, and secure experience.</p>
+            </div><!-- /carousel-caption -->
+          </div><!-- /item -->
+          <div class="item">
+            <img src="images/header_bg.png" alt="website">
+            <div class="carousel-caption">
+              <h3>Stan's Kayaks</h3>
+              <p>Sample e-Commerce Website</p>
+            </div><!-- /carousel-caption -->
+          </div><!-- /item -->
+          <div class="item" id="buildingimg">
+            <img src="images/pipeline_bg.jpg" alt="building">
+            <div class="carousel-caption">
+              <h3>The Pipeline</h3>
+              <p>Rome wasn't built in a day, but they did lay bricks every hour. For the time being, my portfolio will be focused on learning how to build Ruby on Rails applications supplemented by additional frameworks and libraries.</p>
+            </div><!-- /carousel-caption -->
+          </div><!-- /item -->
+        </div><!-- /carousel-inner -->
+        <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-portfolio" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div><!-- /carousel-portfolio -->
+    <!-- /Image Carousel -->
+  </div><!-- /container-fluid -->
 
   <div class="container-fluid anchor" id="about">
 
     <h1>About</h1> 
-      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
+     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>What's your background?</a>
+            </h4><!-- /panel-title -->
+          </div><!-- /panel-heading -->
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              I received my Bachelor's Degree in Economics from UC San Diego in La Jolla, California. While I was still a junior, I started a family-operated retail business in Irvine, California. After successfully running it for 6 years, I sold the business and participated for a year in California State University Fullerton's Army R.O.T.C. program.
+            </div><!-- /panel-body -->
+          </div><!-- /collapseOne -->
+        </div><!-- /panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>Why start coding?</a>
+            </h4><!-- /panel-title -->
+          </div><!-- /panel-heading -->
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              While I was on summer vacation, I decided to try learning coding skills as a hobby. Once I started, I was addicted to the journey - from that initial debilitating feeling of confoundment to the "Hallelujah!" moment of gratitification. It is my goal to become a web developer that can implement stable, fast, and secure websites.
+            </div><!-- /panel-body -->
+          </div><!-- /collapseTwo -->
+        </div><!-- /panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>You don't have a BS in Computer Science?</a>
+            </h4><!-- /panel-title -->
+          </div><!-- /panel-heading -->
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              Despite my lack of a techincal degree, I know I have the self-motivation and diligence to utilize the vast learning opportunites available to become an effective and capable web developer who can perform well individually and on a team.
+            </div><!-- /panel-body -->
+          </div><!-- /collapseThree -->
+        </div><!-- /panel -->
+      </div><!-- /panel-group -->
+
+      <h5>Student of:</h5><a href="http://careerfoundry.com/" target="_blank"><img src="images/cf_logo.png" width="185" height="35"></a>
   </div>
 
   <div class="container-fluid anchor" id="contact">
