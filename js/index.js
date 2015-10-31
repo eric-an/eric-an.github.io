@@ -1,14 +1,35 @@
-var vid = document.getElementById("bg_video"),
-pauseButton = document.getElementById("vidpause");
+// Twitter button
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
-pauseButton.addEventListener("click", function() {
-    var pauseglyph = '<span class="glyphicon glyphicon-pause"></span>';
-    var playglyph = '<span class="glyphicon glyphicon-play"></span>';
-	if (vid.paused) {
-vid.play();
-		pauseButton.innerHTML = pauseglyph;
-	} else {
-        vid.pause();
-        pauseButton.innerHTML = playglyph;
-	}
-})
+$(document).ready(function(){
+  // Smooth scrolling
+  var $root = $('html, body');
+    $('.navbar-header a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+  });
+});
+
+var skillType = [ { experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/html5_logo.png" }, 
+{ experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/css3_logo.png" },
+{ experience: "images/beginner_gauge.png", pic: "../eric-an.github.io/images/js_logo.png" },
+{ experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/ruby_logo.png" },
+{ experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/ror_logo.png" }
+];
+
+for (var i = 0; i < skillType.length; i++) {
+  $("#" + i).css("background", "url(" + skillType[i].pic + ")");
+};
+
+$(".skill_item").mouseenter(function () {
+  $(this).html("<p class='experience_info'><img src=" + skillType[this.id].experience + " width='90' height='70'></p>");
+}).mouseleave(function () {
+  $(".experience_info").html("");
+});
+
+

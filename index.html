@@ -10,19 +10,21 @@
   <title>Eric An - Web Developer</title>
   
   <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+  <link href="images/self.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="css/index_styles.css" rel="stylesheet">
-  <link href="images/self.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+ 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <nav class="container-fluid">
       <nav class="navbar-header">
         <a href="#"><img src="images/self.png" id="self_navbar" width="120" height="120"></a>
         <!-- mobile navigation -->
-        <img src="images/self_mobile.jpg" id="self_mobile"width="90" height="90" class="visible-xs visible-sm">
+        <a href="#"><img src="images/self_mobile.jpg" id="self_mobile" width="90" height="90" class="visible-xs visible-sm"></a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border: 0">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -52,47 +54,64 @@
                 <source src="videos/header_bg.ogv" type="video/ogg">        
         </video>
       </div><!-- /video_bg -->
-      <div class="row intro">
+      <div class="row intro_section">
         <div class="overlay_text col-xs-12 col-s-12 col-md-12">
           <h1><span class="glyphicon glyphicon-tree-conifer"></span></h1>
           <p title="- Susan Schutz">"Take the power to walk in the forest and be a part of nature. Take the power to control your own life. No one else can do it for you."</p>
-          <p><a button type="button" id="videocontactbtn" class="btn btn-default" href="#contact">Hire Me</a></p>
+          <p><a button type="button" id="introcontactbtn" class="btn btn-default" href="#contact">Hire Me</a></p>
         </div><!-- /overlay_text -->
       </div><!-- /row intro -->
     </section><!-- /hero -->
   </div><!-- /container-fluid -->
 
   <div class="container-fluid anchor" id="skills">
-    <h1>Skills</h1> 
-      <p><img src="images/html5_logo.png" width="130" height="150">
-      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing">
-      <img src="images/css3_logo.png" width="130" height="150">
-      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing">
-      <img src="images/js_logo.png" width="130" height="150">
-      <img src="images/beginner_gauge.png" width="160" height="90" class="gauge_spacing"></p>
-      <p><img src="images/ruby_logo.png" width="130" height="150">
-      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing">
-      <img src="images/ror_logo.png" width="115" height="135">
-      <img src="images/familiar_gauge.png" width="160" height="90" class="gauge_spacing"></p>
-      <div id="skills_subset"> 
-        <h3>Introductory Knowledge</h3>
-        <p><img src="images/angularjs_logo.png" width="80" height="100">
-        <img src="images/json_logo.png" width="80" height="100">
-        <img src="images/jquery_logo.gif" width="80" height="100">
-        <img src="images/ajax_logo.png" width="130" height="80"></p>
+    <h6 id="skills_directions_one">Hover over the logos to see my expertise.</h6>
+    <h6 id="skills_directions_two">On a mobile browser? Click on the logos to see my expertise.</h6>
+
+    <div class="row">
+      <div class="col-xs-12 col-s-4 col-md-4 skill_icons">
+        <div class="skill_item" id="0"></div>
+      </div>
+      <div class="col-xs-12 col-s-4 col-md-4 skill_icons" >
+        <div class="skill_item" id="1"></div>
+      </div>     
+      <div class="col-xs-12 col-s-4 col-md-4 skill_icons">
+        <div class="skill_item" id="2"></div>
+      </div>
+    </div><!-- /row -->    
+    
+    <div class="row">
+      <div class="col-xs-12 col-s-3 col-md-6 skill_icons_two">
+        <div class="skill_item" id="3"></div>
+      </div>
+      <div class="col-xs-12 col-s-3 col-md-6 skill_icons_two">
+        <div class="skill_item" id="4"></div>
       </div>  
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col-xs-12 col-s-12 col-md-12">
+        <div id="skills_subset"> 
+          <h3>Introductory Knowledge</h3>
+          <p><img src="images/angularjs_logo.png">
+          <img src="images/json_logo.png">
+          <img src="images/jquery_logo.png">
+          <img src="images/ajax_logo.png"></p>
+        </div><!-- /skills_subset -->
+      </div><!-- /col -->   
+    </div><!-- /row -->  
   </div><!-- /container-fluid -->
 
   <div class="container-fluid anchor" id="portfolio">
       <!-- Image Carousel -->
-      <div id="carousel-portfolio" class="carousel slide" data-ride="carousel" data-interval="10000">
+      <div id="carousel-portfolio" class="carousel slide" data-ride="carousel" data-interval="30000">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <a href="www.google.com"><img src="images/portfolio_bg.jpg" alt="desk"></a>
+            <img src="images/portfolio_bg.jpg" alt="desk">
             <div class="carousel-caption">
               <h3>Portfolio</h3>
-              <p>My mission is to continously develop my programming expertise so that I can produce high-quality responsive websites and applications that deliver a stable, fast, and secure experience.</p>
+              <p>My mission is to continously develop my programming expertise so that I can produce high-quality responsive websites and applications that deliver a stable, fast, and secure experience. Click on the right to learn more. </p>
             </div><!-- /carousel-caption -->
           </div><!-- /item -->
           <div class="item">
@@ -111,10 +130,6 @@
           </div><!-- /item -->
         </div><!-- /carousel-inner -->
         <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-portfolio" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
           <a class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
@@ -124,8 +139,6 @@
   </div><!-- /container-fluid -->
 
   <div class="container-fluid anchor" id="about">
-
-    <h1>About</h1> 
      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
@@ -164,20 +177,69 @@
           </div><!-- /collapseThree -->
         </div><!-- /panel -->
       </div><!-- /panel-group -->
-
-      <h5>Student of:</h5><a href="http://careerfoundry.com/" target="_blank"><img src="images/cf_logo.png" width="185" height="35"></a>
-  </div>
+  </div><!-- /container-fluid -->
 
   <div class="container-fluid anchor" id="contact">
+    <div class="row" id="contact_height">
+      <div class="col-xs-12 col-s-4 col-md-4">
+        <h2><span class="glyphicon glyphicon-send"></span></h2>
+          <h3>erican@me.com</h3>
+      </div><!-- /col -->
 
-    <h1>Contact</h1> 
-      <p>Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.Meditation selvage fixie mumblecore. Meh cliche next level scenester, VHS fanny pack butcher PBR. Irony literally shabby chic, farm-to-table narwhal sustainable PBRB 90's deep v master cleanse Echo Park.</p>
-  </div>
+      <div class="col-xs-12 col-s-4 col-md-4">
+        <h2><span class="glyphicon glyphicon-phone"></span></h2>
+        <div class="twitterbutton">
+          <a href="https://twitter.com/intent/tweet?screen_name=epically_eric" class="twitter-mention-button" data-related="epically_eric">Tweet me</a>
+        </div>
+      </div><!-- /col -->
+
+      <div class="col-xs-12 col-s-4 col-md-4">
+        <h2><span class="glyphicon glyphicon-briefcase"></span></h2>
+        <div class="modal-button">
+          <button class="btn btn-primary" data-toggle="modal" data-target=".open_resume">Print my Resume</button>
+        </div><!-- /modal-button -->
+        <div class="modal fade open_resume" tabindex="-1" role="dialog" aria-labelledby="myResume" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Resume</h4>
+              </div><!-- /modal-header -->
+              <div class="modal-body">
+                <embed id="myresumemodal" src="files/resume.pdf"></embed>
+              </div><!-- /modal-body -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div><!-- /modal-footer -->
+            </div><!-- /modal-content -->
+          </div><!-- /modal-dialog -->
+        </div><!-- /modal -->
+      </div><!-- /col -->
+    </div><!-- /row -->  
+  </div><!-- /container-fluid -->
+
+  <div class="container-fluid" id="footer_info">
+    <h6><span class="glyphicon glyphicon-grain"></span></h6>
+     <p>Isiah 41:18</p>
+    <footer>
+     &copy; Eric An 2015
+    </footer><!-- footer -->
+    <div id="made_with">
+      <p>Student of:&nbsp;<a href="http://careerfoundry.com/" target="_blank"><img src="images/cf_logo.png" width="90" height="20"></a></p>
+      <p> Made with:&nbsp; 
+        <a href="http://www.sublimetext.com/" target="_blank"><img src="images/sublime_logo.png" width="25" height="25"></a>
+        <a href="http://getbootstrap.com/" target="_blank"><img src="images/bootstrap_logo.png" width="25" height="25"></a>
+        <a href="https://github.com/" target="_blank"><img src="images/github_logo.jpg" width="28" height="23"></a>
+      </p>
+    </div><!-- /made_with -->
+  </div><!-- /container-fluid -->
 
   <!--jQuery Script-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <!-- Bootstrap core JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script type= "text/javascript" src="js/index.js"></script> 
 
 </body>
