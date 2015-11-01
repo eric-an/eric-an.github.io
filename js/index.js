@@ -12,11 +12,11 @@ $(document).ready(function(){
   });
 });
 
-var skillType = [ { experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/html5_logo.png" }, 
-{ experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/css3_logo.png" },
-{ experience: "images/beginner_gauge.png", pic: "../eric-an.github.io/images/js_logo.png" },
-{ experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/ruby_logo.png" },
-{ experience: "images/familiar_gauge.png", pic: "../eric-an.github.io/images/ror_logo.png" }
+var skillType = [ { experience: "images/familiar_gauge.png", pic: "images/html5_logo.png" }, 
+{ experience: "images/familiar_gauge.png", pic: "images/css3_logo.png" },
+{ experience: "images/beginner_gauge.png", pic: "images/js_logo.png" },
+{ experience: "images/familiar_gauge.png", pic: "images/ruby_logo.png" },
+{ experience: "images/familiar_gauge.png", pic: "images/ror_logo.png" }
 ];
 
 for (var i = 0; i < skillType.length; i++) {
