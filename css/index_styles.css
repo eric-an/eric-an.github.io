@@ -100,34 +100,18 @@ p #introcontactbtn {
     background: url("../images/header_bg.png") no-repeat center center;
     background-size: cover;
     max-width: 100%;
-    height: 40em; 
+    height: 38em; 
     opacity: .9; }
   .hero h1 {
-    color: #DBE4FB;
-    font-size: 800%;
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-    margin: 0; }   
+    font-size: 800%;}   
  .hero p {
-    color: #DBE4FB;
-    font-family: 'Raleway', sans-serif;
-    font-size: 90%;
-    text-align: center;
-    text-transform: uppercase;
-    max-width: 100%;
-    height: auto;
+    font-size: 120%;
     margin: 6% 8% 7% 8%; }
 #introcontactbtn {
     border-radius: 7px;
-    font-family: 'Raleway', sans-serif;
-    color: #ffffff;
     font-size: 11px;
-    background: #005b96;
-    padding: 11px;
-    text-decoration: none; 
-    margin: .2em;
-    border: 0; }
+    padding: 11px; 
+    margin: .2em;}
 }
 
 
@@ -171,7 +155,9 @@ p #introcontactbtn {
   #skills_directions_one {
     display: none; }
   #skills_directions_two {
-    display: block; } 
+    display: block; }
+  #skills h6 {
+  font-size: 150%; }   
 }
 
 /* Portfolio Section */
@@ -193,8 +179,8 @@ p #introcontactbtn {
 .carousel-caption h3 {
   font-size: 300%; }
 .carousel-caption p {
-  font-size: 100%; 
-  padding-bottom: 5%; }
+  font-size: 120%;
+  padding-bottom: 0; }
 }  
 
 
@@ -280,7 +266,16 @@ p #introcontactbtn {
   height: 380px;
   padding: 1em; }
 @media only screen and (max-width: 800px) {
-
+#contact {
+  background-size: cover;
+  background-attachment: scroll;
+  max-width: 100%;
+  height: auto; 
+  margin-top: 1em; }
+#contact h2 {
+  font-size: 600%;
+  margin-top: .5em;
+  margin-bottom: 6%}  
 }
 
 /* Footer Section */
