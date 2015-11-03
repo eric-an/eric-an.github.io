@@ -7,7 +7,7 @@
   <!--[if lt IE 9]>
   <script src="dist/html5shiv.js"></script>
   <![endif]-->
-  <title>Eric An - Web Developer</title>
+  <title>Eric An | erican@me.com</title>
   
   <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
   <link href="images/self.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />  
@@ -33,7 +33,10 @@
         </button>
         <!-- /mobile navigation -->
       </nav><!-- /navbar-header -->          
-      <nav class="navbar-collapse collapse">          
+      <nav class="navbar-collapse collapse">
+        <ul class="nav navbar-nav nav_name">
+          <li><a href="#contact">Eric An</a></li>
+        </ul>          
         <ul class="rightlinks nav navbar-nav">
           <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -69,8 +72,8 @@
 
   <!-- Skills -->
   <div class="container-fluid anchor" id="skills">
-    <h6 id="skills_directions_one">Hover over the logos to see my expertise.</h6>
-    <h6 id="skills_directions_two">On a mobile browser? Click on the logos to see my expertise.</h6>
+    <h6 id="skills_directions_one">Hover over the logos to see my proficiency.</h6>
+    <h6 id="skills_directions_two">On a mobile browser? Click on the logos to see my proficiency.</h6>
 
     <div class="row">
       <div class="col-xs-12 col-s-2 col-md-2 col-md-offset-1 skill_icons">
@@ -107,32 +110,40 @@
   <!-- Portfolio -->
   <div class="container-fluid anchor" id="portfolio">
       <!-- Image Carousel -->
-      <div id="carousel-portfolio" class="carousel slide" data-ride="carousel" data-interval="30000">
+      <div id="carousel-portfolio" class="carousel slide" data-ride="carousel" data-interval="false">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <img src="images/portfolio_bg.jpg" alt="desk">
-            <div class="carousel-caption">
-              <h3>Portfolio</h3>
-                <p>My mission is to continously develop my programming expertise so that I can produce high-quality responsive websites and applications that deliver a stable, fast, and secure experience. Click on the right to learn more. </p>
-            </div><!-- /carousel-caption -->
+            <div class="container">
+              <div class="carousel-caption">
+                <h3>Portfolio</h3>
+                  <p>My mission is to continuously develop my programming expertise so that I can produce high-quality responsive websites and applications that deliver a stable, fast, and secure experience. Click on the right to learn more. </p>
+              </div><!-- /carousel-caption -->
+            </div><!-- /container -->  
           </div><!-- /item -->
 
           <div class="item">
-            <img src="images/header_bg.png" alt="website">
+            <img src="images/rails_app.png" alt="website">
+            <div class="container">
             <div class="carousel-caption">
-              <h3>Stan's Kayaks</h3>
-                <p>Sample e-Commerce Website</p>
+              <h3>Deep Sea Kayaks</h3>
+                <p>An e-Commerce website with a user-friendly design that offers secure user authentication and authorization. Through building this web app, I gained familiarity with the MVC architecture, RESTful protocol, and CRUD resources. The site was reviewed for security issues and automatic testing methods were implemented, as well as debugging processes. Hosting provided by:
+                  <br><a href="https://www.heroku.com/" target="_blank"><img src="images/heroku_logo.png"></a></p>
+                <p><a button type="button" class="btn btn-primary" href="http://erican2394.herokuapp.com/">Click here to visit the site</a></p>
             </div><!-- /carousel-caption -->
+          </div>
           </div><!-- /item -->
 
           <div class="item" id="buildingimg">
             <img src="images/pipeline_bg.jpg" alt="building">
+            <div class="container">
             <div class="carousel-caption">
               <h3>The Pipeline</h3>
                 <p>Rome wasn't built in a day, but they did lay bricks every hour. For the time being, my portfolio will be focused on learning how to build Ruby on Rails applications supplemented by additional frameworks and libraries.</p>
             </div><!-- /carousel-caption -->
+          </div>
           </div><!-- /item -->
         </div><!-- /carousel-inner -->
 
@@ -169,7 +180,7 @@
           </div><!-- /panel-heading -->
           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-              While I was on summer vacation, I decided to try learning coding skills as a hobby. Once I started, I was addicted to the journey - from that initial debilitating feeling of confoundment to the "Hallelujah!" moment of gratitification. It is my goal to become a web developer that can implement stable, fast, and secure websites.
+              While I was on summer vacation, I decided to try learning coding skills as a hobby. Once I started, I was addicted to the journey - from that initial debilitating feeling of confoundment to the "Hallelujah!" moment of gratification. It is my goal to become a web developer that can implement stable, fast, and secure websites.
             </div><!-- /panel-body -->
           </div><!-- /collapseTwo -->
         </div><!-- /panel -->
@@ -182,7 +193,7 @@
           </div><!-- /panel-heading -->
           <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="panel-body">
-              I have a strong source of self-motivation and diligence to perform well in this web development environment as it is a career dream I hope to achieve. I possess problem-solving abilities and critical thinking skills that will make me an effective web developer. I work hard at expanding my knowledge base so that I know I can perform well individually and on a team. 
+              I have a strong source of self-motivation and diligence to perform well in this web development environment, as it is a career dream I hope to achieve. I possess problem-solving abilities and critical thinking skills that will make me an effective web developer. I work hard at expanding my knowledge base so that I know I can perform well individually and on a team. 
             </div><!-- /panel-body -->
           </div><!-- /collapseThree -->
         </div><!-- /panel -->
