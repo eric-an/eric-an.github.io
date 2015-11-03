@@ -177,11 +177,7 @@ p #introcontactbtn {
 /* Portfolio Section */
 #portfolio {
   margin-top: 1em; }
-.carousel {
-  height: 450px;
-}
 .carousel-inner > .item > img {
-  position: absolute
   top: 0;
   left: 0;
   min-width: 100%;
@@ -203,10 +199,16 @@ p #introcontactbtn {
 .carousel-inner > .item > img {
   height: 300px; }
 .carousel-caption h3 {
-  font-size: 300%; }
+  font-size: 250%; }
 .carousel-caption p {
   font-size: 100%; }
+#portfolio_button {
+  border-radius: 7px;
+    font-size: 5px;
+    padding: 3px; 
+    margin: .2em; } 
 }
+
 
   /* About Section */
 #about {
