@@ -16,6 +16,8 @@ body {
   z-index: 100;
   position: fixed;
   display: inline-block; }
+#self_mobile {
+  display: none; }  
 .navbar {
   background-color: #FFF }
 .nav a {
@@ -25,9 +27,6 @@ body {
   margin-top: .27em; }
 .navbar-default .navbar-nav>li>a {
   color: #000; }
-.nav_name {
-  margin-left: 10%;
-  font-size: 20px; }  
 .rightlinks {
   float: right; }
 #contactbtn {
@@ -41,11 +40,6 @@ body {
   border: 0; }
 #contactbtn:hover {
   background: #6497b1; }
-@media (max-width: 992px) {
-  .nav_name {
-    margin-left: 8%;
-    font-size: 18px; } 
-}  
 @media only screen and (max-width: 768px) {
   #self_navbar {
     display: none; }  
@@ -64,25 +58,21 @@ body {
 .hero_video .intro_section {
   top: 3%;
   left: 0;
-  padding: 3em;
+  padding-top: 10%;
   position: absolute;
   margin-right: 0;
   margin-left: 0; }
 .hero_video h1 {
   color: #FFF;
-  font-size: 1200%;
+  font-size: 900%;
   text-align: center;
   max-width: 100%;
   height: auto;
-  margin: 0; }
-.hero_video h2 {
-  color: #FFF;
-  font-size: 300%;
-  text-align: center; }      
+  margin: 0; }      
 .hero_video p {
   color: #FFF;
   font-family: 'Raleway', sans-serif;
-  font-size: 200%;
+  font-size: 150%;
   text-align: center;
   max-width: 100%;
   height: auto;
@@ -91,12 +81,12 @@ p #introcontactbtn {
   margin-top: 0;
   text-transform: none; }  
 #introcontactbtn {
-  border-radius: 57px;
+  border-radius: 7px;
   font-family: 'Raleway'; sans-serif;
-  color: #ffffff;
-  font-size: 19px;
+  color: #FFF;
+  font-size: 15px;
   background: #005b96;
-  padding: 9px 16px 9px 16px;
+  padding: 8px 15px 8px 15px;
   text-decoration: none; 
   margin: .5em;
   border: 0; }
@@ -112,12 +102,9 @@ p #introcontactbtn {
     height: 38em; 
     opacity: .9; }
   .hero_video h1 {
-    font-size: 800%; } 
-  .hero_video h2 {
-    display: none; }  
+    font-size: 600%; }  
   .hero_video p {
-    font-size: 120%;
-    margin: 6% 8% 7% 8%; }
+    font-size: 120%; }
   #introcontactbtn {
     border-radius: 7px;
     font-size: 11px;
@@ -126,73 +113,32 @@ p #introcontactbtn {
 }
 
 
-/* Skills Section */
-#skills {
-  background: linear-gradient(to bottom right, #03396c, #6497b1);
-  margin-top: 1em; }
-#skills h6 {
-  margin-top: 3%;
-  margin-bottom: 2%;
-  text-align: center;
-  font-size: 210%;
-  font-family: 'Raleway', sans-serif;
-  color: #FFF; }
-#skills_directions_two {
-  display: none;  }   
-.skill_item {
-  width: 90px; 
-  height: 110px; 
-  display: inline-block; }
-.skill_icons {
-  text-align: center; } 
-.experience_info {
-  position: absolute; 
-   top: 30%; 
-   left: 0;
-   width: 100%; }  
-#skills_subset h3 {
-  font-size: 160%;
-  font-family: 'Raleway', sans-serif;
-  color: #FFF;
-  text-align: center; 
-  margin-bottom: 0; }
-#skills_subset p {
-  text-align: center; 
-  margin-top: 2%; } 
-@media (max-width: 992px) {
-  #skills_directions_one {
-    display: none; }
-  #skills_directions_two {
-    display: block; }  
-}  
-@media only screen and (max-width: 768px) {
-  #skills_directions_one {
-    display: none; }
-  #skills_directions_two {
-    display: block; }
-  #skills h6 {
-  font-size: 150%; }   
-}
-
 /* Portfolio Section */
 #portfolio {
-  margin-top: 1em; }
+  background-color: #FFF; }
 .carousel-inner > .item > img {
   top: 0;
   left: 0;
   min-width: 100%;
   height: 450px; }
 .carousel-caption h3 {
-  color: #FFF; 
-  font-size: 450%; }
+  color: #18171C; 
+  font-size: 450%;
+  text-shadow: none; }
 .carousel-caption p {
-  color: #FFF; 
+  color: #18171C; 
   font-family: 'Raleway', sans-serif;
   font-size: 155%;  
-  margin-bottom: 5%; }
+  margin-bottom: 5%; 
+  text-shadow: none; }
+#carousel-text {
+  bottom: 80px; }
+#portfolio_examples {
+  top: 2em; }
 .carousel-control.right, .carousel-control.left {
   background-image: none;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #18171C; }
 @media only screen and (max-width: 768px) {
 .carousel {
   height: 300px; }
@@ -202,22 +148,28 @@ p #introcontactbtn {
   font-size: 250%; }
 .carousel-caption p {
   font-size: 100%; }
+.carousel-caption img {
+  display: none; }  
 #portfolio_button {
   border-radius: 7px;
-    font-size: 5px;
-    padding: 3px; 
+    font-size: 12px;
+    padding: 7px; 
     margin: .2em; } 
 }
 
 
-  /* About Section */
+/* About Section */
 #about {
-  background: linear-gradient(to bottom, #03396c, #6497b1);
+  background-color: #FFF;
   height: auto;
-  margin-top: 1em;
   max-width: 100%; }
+#about h6 {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 450%;
+  color: #18171C; }  
 .panel-group {
-  margin-top: 6%; }   
+  margin-top: 2%; }   
 .panel {
   border: 0px;
   background-color: #FFF;
@@ -243,13 +195,36 @@ p #introcontactbtn {
   text-decoration: none; }
 .panel-default > .panel-heading a:active {
   text-decoration: none; }
+.skill_item {
+  width: 90px; 
+  height: 110px; 
+  display: inline-block; }
+.skill_icons {
+  text-align: center; } 
+.experience_info {
+  position: absolute; 
+   top: 30%; 
+   left: 0;
+   width: 100%; }  
+#skills_subset h3 {
+  font-size: 160%;
+  font-family: 'Raleway', sans-serif;
+  color: #18171C;
+  text-align: center; 
+  margin-bottom: 0; }
+#skills_subset p {
+  text-align: center; 
+  margin-top: 2%; } 
 @media only screen and (max-width: 768px) {
 #about {
-  height: auto; }
+  height: auto; 
+  margin-top: -1em; }
 .panel-title {
   font-size: 1.3em; }
 .panel-body {
   font-size: 1.2em; }
+#about h6 {
+  font-size: 250%; }  
 }
 
 

@@ -9,7 +9,7 @@
   <![endif]-->
   <title>Eric An | erican@me.com</title>
   
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
   <link href="images/self.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="css/index_styles.css" rel="stylesheet">
@@ -22,9 +22,9 @@
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <nav class="container-fluid">
       <nav class="navbar-header">
-        <a href="#"><img src="images/self.png" id="self_navbar"></a>
+        <a href="#"><img src="images/self2.png" id="self_navbar"></a>
         <!-- mobile navigation -->
-        <a href="#"><img src="images/self_mobile.png" id="self_mobile" class="visible-xs visible-sm"></a>
+        <a href="#"><img src="images/self_mobile2.png" id="self_mobile"></a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border: 0">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -34,11 +34,7 @@
         <!-- /mobile navigation -->
       </nav><!-- /navbar-header -->          
       <nav class="navbar-collapse collapse">
-        <ul class="nav navbar-nav nav_name">
-          <li><a href="#contact">Eric An</a></li>
-        </ul>          
         <ul class="rightlinks nav navbar-nav">
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a button id="contactbtn" type="button" class="btn btn-default" href="#contact">Contact</a></li>
@@ -46,64 +42,22 @@
       </nav><!-- /navbar-collapse collapse -->
     </nav><!-- /container-fluid -->
   </nav><!-- /navbar navbar-inverse navbar-fixed-top -->
-  
+
 
   <!-- Hero Header -->
-  <div class="container-fluid">
-    <section class="hero_video">
-      <div class="video_bg">
-        <video loop muted autoplay poster="images/header_bg.png" id="bg_video">
-          <source src="videos/header_bg.webm" type="video/webm">
-          <source src="videos/header_bg.mp4" type="video/mp4">
-          <source src="videos/header_bg.ogv" type="video/ogg">       
-        </video>
-      </div><!-- /video_bg -->
-      <div class="row intro_section">
-        <div class="overlay_text col-xs-12 col-s-12 col-md-12">
-          <h1><span class="glyphicon glyphicon-tree-conifer"></span></h1>
-            <p title="- Susan Schutz">"Take the power to love what you want in life and love it honestly. Take the power to walk in the forest and be a part of nature. Take the power to control your own life."</p>
-            <p><a button type="button" id="introcontactbtn" class="btn btn-default" href="#contact">Hire Me</a></p>
-        </div><!-- /overlay_text -->
-        <h2><span class="glyphicon glyphicon-chevron-down"></span></h2>
-      </div><!-- /row intro -->
-    </section><!-- /hero -->
-  </div><!-- /container-fluid -->
-
-
-  <!-- Skills -->
-  <div class="container-fluid anchor" id="skills">
-    <h6 id="skills_directions_one">Hover over the logos to see my proficiency.</h6>
-    <h6 id="skills_directions_two">On a mobile browser? Click on the logos to see my proficiency.</h6>
-
-    <div class="row">
-      <div class="col-xs-12 col-s-2 col-md-2 col-md-offset-1 skill_icons">
-        <div class="skill_item" id="0"></div>
-      </div>
-      <div class="col-xs-12 col-s-2 col-md-2 skill_icons" >
-        <div class="skill_item" id="1"></div>
-      </div>     
-      <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-        <div class="skill_item" id="2"></div>
-      </div>
-      <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-        <div class="skill_item" id="3"></div>
-      </div>
-      <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-        <div class="skill_item" id="4"></div>
-      </div>  
-    </div><!-- /row -->
-
-    <div class="row">
-      <div class="col-xs-12 col-s-12 col-md-12">
-        <div id="skills_subset"> 
-          <h3>Introductory Knowledge</h3>
-            <p><img src="images/angularjs_logo.png">
-          <img src="images/json_logo.png">
-          <img src="images/jquery_logo.png">
-          <img src="images/ajax_logo.png"></p>
-        </div><!-- /skills_subset -->
-      </div><!-- /col -->   
-    </div><!-- /row -->  
+  <div class="container-fluid hero_video">
+    <div class="video_bg">
+      <video loop muted autoplay poster="images/header_bg.gif" id="bg_video">
+        <source src="videos/header_bg.webm" type="video/webm">
+        <source src="videos/header_bg.mp4" type="video/mp4">
+        <source src="videos/header_bg.ogv" type="video/ogg">       
+      </video>
+    </div><!-- /video_bg -->
+    <div class="intro_section">
+      <h1><span class="glyphicon glyphicon-tree-conifer"></span></h1>
+        <p title="- Susan Schutz">"Take the power to love what you want in life and love it honestly. Take the power to walk in the forest and be a part of nature. Take the power to control your own life."</p>
+        <p><a button type="button" id="introcontactbtn" class="btn btn-default" href="#contact">Hire Me</a></p>
+    </div><!-- /intro_section -->
   </div><!-- /container-fluid -->
 
 
@@ -115,9 +69,9 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="images/portfolio_bg.jpg" alt="desk">
+            <img src="images/portfolio_bg.png">
             <div class="container">
-              <div class="carousel-caption">
+              <div class="carousel-caption" id="carousel-text">
                 <h3>Portfolio</h3>
                   <p>My mission is to continuously develop my programming expertise so that I can produce high-quality responsive websites and applications that deliver a stable, fast, and secure experience. Click on the right to learn more. </p>
               </div><!-- /carousel-caption -->
@@ -125,9 +79,10 @@
           </div><!-- /item -->
 
           <div class="item">
-            <img src="images/rails_app.png" alt="website">
+            <img src="images/portfolio_bg.png">
             <div class="container">
-            <div class="carousel-caption">
+            <div class="carousel-caption" id="portfolio_examples">
+              <img src="images/rails_app.png">
               <h3>Deep Sea Kayaks</h3>
                 <p>An e-Commerce website with a user-friendly design that offers secure user authentication and authorization. Through building this web app, I gained familiarity with the MVC architecture, RESTful protocol, and CRUD resources. The site was reviewed for security issues and automatic testing methods were implemented, as well as debugging processes. Hosting provided by:
                   <br><a href="https://www.heroku.com/" target="_blank"><img src="images/heroku_logo.png"></a></p>
@@ -137,11 +92,11 @@
           </div><!-- /item -->
 
           <div class="item" id="buildingimg">
-            <img src="images/pipeline_bg.jpg" alt="building">
+            <img src="images/portfolio_bg.png">
             <div class="container">
-            <div class="carousel-caption">
+            <div class="carousel-caption" id="carousel-text">
               <h3>The Pipeline</h3>
-                <p>Rome wasn't built in a day, but they did lay bricks every hour. For the time being, my portfolio will be focused on learning how to build Ruby on Rails applications supplemented by additional frameworks and libraries.</p>
+                <p>More projects coming soon! For the time being, my portfolio will be focused on Ruby on Rails applications supplemented by additional frameworks and libraries.</p>
             </div><!-- /carousel-caption -->
           </div>
           </div><!-- /item -->
@@ -157,12 +112,14 @@
 
 <!-- About -->
   <div class="container-fluid anchor" id="about">
+    <h6 id="skills_directions_one">About Me</h6>
+
      <!-- Accordion -->
      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>What's your background?</a>
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>What's your background?</a>
             </h4><!-- /panel-title -->
           </div><!-- /panel-heading -->
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -180,7 +137,7 @@
           </div><!-- /panel-heading -->
           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-              While I was on summer vacation, I decided to try learning coding skills as a hobby. Once I started, I was addicted to the journey - from that initial debilitating feeling of confoundment to the "Hallelujah!" moment of gratification. It is my goal to become a web developer that can implement stable, fast, and secure websites.
+              While I was on summer vacation after a year of volunteering, I decided to try learning coding skills as a hobby. Once I started, I was addicted to the journey - from that initial debilitating feeling of confoundment to the "Hallelujah!" moment of gratification. It is my goal to become a web developer that can implement stable, fast, and secure websites.
             </div><!-- /panel-body -->
           </div><!-- /collapseTwo -->
         </div><!-- /panel -->
@@ -193,10 +150,53 @@
           </div><!-- /panel-heading -->
           <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="panel-body">
-              I have a strong source of self-motivation and diligence to perform well in this web development environment, as it is a career dream I hope to achieve. I possess problem-solving abilities and critical thinking skills that will make me an effective web developer. I work hard at expanding my knowledge base so that I know I can perform well individually and on a team. 
+              I have a strong source of self-motivation and diligence to perform well in this web development environment, as it is a career dream I hope to achieve. I possess problem-solving abilities and critical thinking skills that will make me an effective web developer. I work hard at expanding my knowledge base so that I can perform well individually and on a team. 
             </div><!-- /panel-body -->
           </div><!-- /collapseThree -->
         </div><!-- /panel -->
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>What is your skillset?</a>
+            </h4><!-- /panel-title -->
+          </div><!-- /panel-heading -->
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+            <div id="skills">
+              <div class="row">
+                <div class="col-xs-12 col-s-2 col-md-2 col-md-offset-1 skill_icons">
+                  <div class="skill_item" id="0"></div>
+                </div>
+                <div class="col-xs-12 col-s-2 col-md-2 skill_icons" >
+                  <div class="skill_item" id="1"></div>
+                </div>     
+                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
+                  <div class="skill_item" id="2"></div>
+                </div>
+                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
+                  <div class="skill_item" id="3"></div>
+                </div>
+                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
+                  <div class="skill_item" id="4"></div>
+                </div>  
+              </div><!-- /row -->
+
+              <div class="row">
+                <div class="col-xs-12 col-s-12 col-md-12">
+                  <div id="skills_subset"> 
+                    <p><img src="images/angularjs_logo.png">
+                    <img src="images/json_logo.png">
+                    <img src="images/jquery_logo.png">
+                    <img src="images/ajax_logo.png"></p>
+                  </div><!-- /skills_subset -->
+                </div><!-- /col -->   
+              </div><!-- /row -->  
+            </div><!-- /skills -->
+            </div><!-- /panel-body -->
+          </div><!-- /collapseFour -->
+        </div><!-- /panel -->
+
       </div><!-- /panel-group -->
   </div><!-- /container-fluid -->
 
@@ -210,10 +210,10 @@
       </div><!-- /col -->
 
       <div class="col-xs-12 col-s-4 col-md-4">
-        <h2><span class="glyphicon glyphicon-phone"></span></h2>
+        <h2><span class="glyphicon glyphicon-globe"></span></h2>
           <div class="media_list">
             <div class="media_link">
-              <a href="https://www.linkedin.com/pub/eric-an/bb/203/8a3" target="_blank"><img src="images/linkedin_logo.png"></a>
+              <a href="https://www.linkedin.com/in/aneric1" target="_blank"><img src="images/linkedin_logo.png"></a>
               <p>LinkedIn</p>
             </div>
             <div class="media_link">  
@@ -235,7 +235,7 @@
         <h2><span class="glyphicon glyphicon-briefcase"></span></h2>
         <!-- Modal -->
         <div class="modal-button">
-          <button class="btn btn-primary" data-toggle="modal" data-target=".open_resume">Print my Public Resume</button>
+          <button class="btn btn-primary" data-toggle="modal" data-target=".open_resume">Print my Resume</button>
         </div><!-- /modal-button -->
 
         <div class="modal fade open_resume" tabindex="-1" role="dialog" aria-labelledby="myResume" aria-hidden="true">
