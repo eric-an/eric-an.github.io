@@ -49,68 +49,13 @@ body {
     display: block; }
 }
 
-
-/* Header Hero Video */
-.hero_video video {
+/* Header Hero */
+.hero_header {
+  background: url("../images/bg_wallpaper.jpg") no-repeat center center;
+  background-size: cover;
   max-width: 100%;
-  height: auto;
+  height: 40em; 
   opacity: .9; }
-.hero_video .intro_section {
-  top: 3%;
-  left: 0;
-  padding-top: 10%;
-  position: absolute;
-  margin-right: 0;
-  margin-left: 0; }
-.hero_video h1 {
-  color: #FFF;
-  font-size: 900%;
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  margin: 0; }      
-.hero_video p {
-  color: #FFF;
-  font-family: 'Raleway', sans-serif;
-  font-size: 150%;
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  margin: 3% 18% 3% 18%; }
-p #introcontactbtn {
-  margin-top: 0;
-  text-transform: none; }  
-#introcontactbtn {
-  border-radius: 7px;
-  font-family: 'Raleway'; sans-serif;
-  color: #FFF;
-  font-size: 15px;
-  background: #005b96;
-  padding: 8px 15px 8px 15px;
-  text-decoration: none; 
-  margin: .5em;
-  border: 0; }
-#introcontactbtn:hover {
-  background: #6497b1; }
-@media only screen and (max-width: 768px) {
-  .video_bg {
-    display: none; }
-  .hero_video {
-    background: url("../images/header_bg.gif") no-repeat center center;
-    background-size: cover;
-    max-width: 100%;
-    height: 38em; 
-    opacity: .9; }
-  .hero_video h1 {
-    font-size: 600%; }  
-  .hero_video p {
-    font-size: 120%; }
-  #introcontactbtn {
-    border-radius: 7px;
-    font-size: 11px;
-    padding: 11px; 
-    margin: .2em; }
-}
 
 
 /* Portfolio Section */
@@ -123,23 +68,28 @@ p #introcontactbtn {
   height: 450px; }
 .carousel-caption h3 {
   color: #18171C; 
-  font-size: 450%;
+  font-size: 400%;
+  text-shadow: none; }
+.carousel-caption h5 {
+  color: #18171C; 
+  font-size: 250%;
   text-shadow: none; }
 .carousel-caption p {
   color: #18171C; 
   font-family: 'Raleway', sans-serif;
   font-size: 155%;  
-  margin-bottom: 5%; 
-  text-shadow: none; }
+  text-shadow: none }
 #carousel-text {
   bottom: 80px; }
 #portfolio_examples {
   top: 2em; }
-.carousel-control.right, .carousel-control.left {
+.carousel-control.right {
   background-image: none;
   text-decoration: none;
   color: #18171C; }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 790px) {
+iframe {
+  display: none; }
 .carousel {
   height: 300px; }
 .carousel-inner > .item > img {
@@ -286,36 +236,12 @@ p #introcontactbtn {
 
 /* Footer Section */
 #footer_info {
-  background-color: #74747C;
   max-width: 100%;
-  height: auto; }
-#footer_info h6 {
+  height: auto; 
+  padding: 1em 0 1em }
+#footer_info p {
   text-align: center;
-  font-size: 280%; 
-  margin-top: 3%;
-  margin-bottom: 0em; }
-#footer_info p, footer {
-  text-align: center;
-  font-size: 100%;
-  margin-bottom: .8em; }
-#made_with p {
-  text-align: right;
-  margin: 0; }
-footer {
-  margin-bottom: -3%; }
-@media only screen and (max-width: 768px) {
-#footer_info h6 {
-  text-align: center;
-  font-size: 280%; 
-  margin-top: 3%;
-  margin-bottom: 0em; }
-#footer_info p, footer {
-  text-align: center;
-  font-size: 100%; }
-#made_with p {
-  text-align: right;
-  margin: 0; }
-footer {
-  margin-bottom: -5%; }
-}
+  font-size: 100%; 
+  padding-top: 1em }
+
 
