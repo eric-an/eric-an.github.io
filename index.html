@@ -1,270 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--[if lt IE 9]>
-  <script src="dist/html5shiv.js"></script>
-  <![endif]-->
-  <title>Eric An | erican@me.com</title>
-  
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-  <link href="images/self.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />  
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eric An - erican@me.com</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="css/index_styles.css" rel="stylesheet">
-  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-
-<body data-spy="scroll" data-target=".navbar">
- 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <nav class="container-fluid">
-      <nav class="navbar-header">
-        <a href="#"><img src="images/self2.png" alt="profile" id="self_navbar"></a>
-        <!-- mobile navigation -->
-        <a href="#"><img src="images/self_mobile2.png" alt="profile_pic" id="self_mobile"></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border: 0">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- /mobile navigation -->
-      </nav><!-- /navbar-header -->          
-      <nav class="navbar-collapse collapse">
-        <ul class="rightlinks nav navbar-nav">
-          <li><a href="http://eric-an.github.io/blog/" target="_blank">Blog</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a button id="contactbtn" type="button" class="btn btn-default" href="#contact">Contact</a></li>
-        </ul><!-- /nav navbar-nav -->
-      </nav><!-- /navbar-collapse collapse -->
-    </nav><!-- /container-fluid -->
-  </nav><!-- /navbar navbar-inverse navbar-fixed-top -->
-
-
-  <!-- Hero Header -->
-  <div class="container-fluid hero_header">
-  </div><!-- /container-fluid -->
-
-  <!-- Portfolio -->
-  <div class="container-fluid anchor" id="portfolio">
-      <!-- Image Carousel -->
-      <div id="carousel-portfolio" class="carousel slide" data-ride="carousel" data-interval="false">
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="images/portfolio_bg.png" alt="background">
-            <div class="container">
-              <div class="carousel-caption" id="carousel-text">
-                <img src="images/cogwheel.png" alt="cogs">
-                <h3>Portfolio</h3>
-                  <p>My mission is to continuously develop my programming expertise so that I can produce high-quality responsive website applications that deliver a stable, fast, and secure experience. Click on the right to learn more.</p>
-              </div><!-- /carousel-caption -->
-            </div><!-- /container -->  
-          </div><!-- /item -->
-
-          <div class="item">
-            <img src="images/portfolio_bg.png" alt="background">
-            <div class="container">
-            <div class="carousel-caption" id="portfolio_examples">
-              <img src="images/rails_app.png" alt="deepseakayaks">
-              <h3>Deep Sea Kayaks</h3>
-                <p>An e-Commerce website with a user-friendly design that offers secure user authentication and authorization. Through building this web app, I gained familiarity with the MVC architecture, RESTful protocol, and CRUD resources. The site was reviewed for security issues and automatic testing methods were implemented, as well as debugging processes.</p>
-                <p><a button type="button" class="btn btn-primary" id="portfolio_button" href="https://deepseakayaks.herokuapp.com" target="_blank">Visit the site</a></p>
-            </div><!-- /carousel-caption -->
-          </div>
-          </div><!-- /item -->
-          
-          <div class="item">
-            <img src="images/portfolio_bg.png" alt="background">
-            <div class="container">
-            <div class="carousel-caption" id="portfolio_examples">
-              <iframe width="350" height="197" src="https://www.youtube.com/embed/wHTfZbNcHpA" frameborder="0" allowfullscreen></iframe>
-              <h5>Music Player</h5>
-                <p>A music player CLI program created with Ruby that interacts with a database to list songs, artists, and genres. It utilizes object relationships and collaboration to create the domain model.</p>
-                <p><a button type="button" class="btn btn-primary" id="portfolio_button" href="https://github.com/eric-an/music_player" target="_blank">View it on GitHub</a></p>
-            </div><!-- /carousel-caption -->
-          </div>
-          </div><!-- /item -->
-
-          <div class="item">
-            <img src="images/portfolio_bg.png" alt="background">
-            <div class="container">
-            <div class="carousel-caption" id="portfolio_examples">
-              <iframe width="350" height="197" src="https://www.youtube.com/embed/p8Bwd9AyURM" frameborder="0" allowfullscreen></iframe>
-              <h5>Tic-Tac-Toe</h5>
-                <p>A Tic-Tac-Toe CLI program created with Ruby that has multiple object relationships and collaborations. The AI option is implemented with logic that makes it unbeatable.</p>
-                <p><a button type="button" class="btn btn-primary" id="portfolio_button" href="https://github.com/eric-an/tic-tac-toe-CLI" target="_blank">View it on GitHub</a></p>
-            </div><!-- /carousel-caption -->
-          </div>
-          </div><!-- /item -->
-
-          <div class="item">
-            <img src="images/portfolio_bg.png" alt="background">
-            <div class="container">
-            <div class="carousel-caption" id="portfolio_examples">
-              <iframe width="350" height="197" src="https://www.youtube.com/embed/-VL8fo0_Utk" frameborder="0" allowfullscreen></iframe>
-              <h5>breathe_in Ruby gem</h5>
-                <p>A CLI program created with Ruby and packaged as a gem. It scrapes air quality data from AirNow.gov and provides today's highs as well as current conditions, based on user-inputted zipcode.</p>
-                <p><a button type="button" class="btn btn-primary" id="portfolio_button" href="https://github.com/eric-an/breathe-in" target="_blank">View it on GitHub</a></p>
-            </div><!-- /carousel-caption -->
-          </div>
-          </div><!-- /item -->
-
-          <div class="item" id="buildingimg">
-            <img src="images/portfolio_bg.png" alt="background">
-            <div class="container">
-            <div class="carousel-caption" id="carousel-text">
-              <h3>The Pipeline</h3>
-                <p>More coming soon!</p>
-            </div><!-- /carousel-caption -->
-          </div>
-          </div><!-- /item -->
-        </div><!-- /carousel-inner -->
-
-        <!-- Controls -->
-        <a class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span></a>
-      </div><!-- /carousel-portfolio -->
-  </div><!-- /container-fluid -->
-
-
-<!-- About -->
-  <div class="container-fluid anchor" id="about">
-    <h6 id="skills_directions_one">About Me</h6>
-
-     <!-- Accordion -->
-     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingOne">
-            <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>What's your background?</a>
-            </h4><!-- /panel-title -->
-          </div><!-- /panel-heading -->
-          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-              I received my Bachelor's Degree in Economics from UC San Diego in La Jolla, California. While I was still a junior, I started a family-operated retail business in Irvine, California. After successfully running it for 6 years, I sold the business and participated for a year in California State University Fullerton's Army R.O.T.C. program.
-            </div><!-- /panel-body -->
-          </div><!-- /collapseOne -->
-        </div><!-- /panel -->
-
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>Why start coding?</a>
-            </h4><!-- /panel-title -->
-          </div><!-- /panel-heading -->
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body">
-              While I was on summer vacation after a year of volunteering, I decided to try learning coding skills as a hobby. Once I started, I was addicted to the journey - from that initial debilitating feeling of confoundment to the "Hallelujah!" moment of gratification at creating a working product. It is my goal to become a web developer that can implement amazing websites for others and create applications that make people's lives easier. 
-            </div><!-- /panel-body -->
-          </div><!-- /collapseTwo -->
-        </div><!-- /panel -->
-
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>Why should I hire you?</a>
-            </h4><!-- /panel-title -->
-          </div><!-- /panel-heading -->
-          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-              I have a strong source of self-motivation and diligence to perform well in this web development environment, as it is a career dream I hope to achieve. I possess problem-solving abilities and critical thinking skills that make me an effective web developer. I work hard at continously expanding my knowledge base so that I can perform well individually and on a team. 
-            </div><!-- /panel-body -->
-          </div><!-- /collapseThree -->
-        </div><!-- /panel -->
-
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingFour">
-            <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-screenshot" style="margin-right: 1em"></span>What is your skillset?</a>
-            </h4><!-- /panel-title -->
-          </div><!-- /panel-heading -->
-          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="panel-body">
-            <div id="skills">
-              <div class="row">
-                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-                  <div class="skill_item" id="0"></div>
+<body>
+	<section class="banner" role="banner">
+    <header id="header">
+      <div class="header-content clearfix">
+        <a id="logo" href="#"><img src="images/logo.png" alt=""></a>
+        <nav class="navigation" role="navigation">
+          <ul class="primary-nav">
+            <li><a href="http://eric-an.github.io/blog/" target="_blank">Blog</a></li>
+            <li><a href="#features">Experience</a></li>
+            <li><a href="#works">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="nav-toggle">Menu<span></span></a>
+      </div><!-- header content -->
+    </header><!-- header -->
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="banner-text text-center">
+              <div class="banner-head">
+                <h1>Eric An</h1>
+              </div>
+              <div class="banner-body">
+                <p>eCommerce superstar</p>
+              </div>   
+                <div class="">
+                <a href="#features" class="btn btn-large">Find out more</a>
+                <p><span class="fa fa-angle-double-down"></span></p>
                 </div>
-                <div class="col-xs-12 col-s-2 col-md-2 skill_icons" >
-                  <div class="skill_item" id="1"></div>
-                </div>     
-                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-                  <div class="skill_item" id="2"></div>
-                </div>
-                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-                  <div class="skill_item" id="3"></div>
-                </div>
-                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-                  <div class="skill_item" id="4"></div>
-                </div>
-                <div class="col-xs-12 col-s-2 col-md-2 skill_icons">
-                  <div class="skill_item" id="5"></div>
-                </div>  
-              </div><!-- /row -->
+            </div><!-- banner text -->
+        </div>
+    </div>
+  </section><!-- banner -->
 
-              <div class="row">
-                <div class="col-xs-12 col-s-12 col-md-12">
-                  <div id="skills_subset"> 
-                    <p>
-                    <img src="images/sql_logo.png" alt="sql">
-                    <img src="images/angularjs_logo.png" alt="angularjs">
-                    <img src="images/json_logo.png" alt="json">
-                    <img src="images/jquery_logo.png" alt="jquery">
-                    <img src="images/ajax_logo.png" alt="ajax"></p>
-                  </div><!-- /skills_subset -->
-                </div><!-- /col -->   
-              </div><!-- /row -->  
-            </div><!-- /skills -->
-            </div><!-- /panel-body -->
-          </div><!-- /collapseFour -->
-        </div><!-- /panel -->
+  <section id="features" class="features section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 feature text-center">
+          <span class="icon icon-tools"></span>
+          <div class="feature-content">
+            <h5>Front End Web Development</h5>
+            <p><strong>Languages:</strong> HTML, CSS, Javascript</p>
+            <p><strong>Frameworks/Libraries:</strong> Bootstrap, jQuery, AngularJS, AJAX, JSON</p>
+            <p><strong>Concepts:</strong> Responsive design</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 feature text-center">
+          <span class="icon icon-tools-2"></span>
+          <div class="feature-content">
+            <h5>Back End Web Development</h5>
+            <p><strong>Languages:</strong> SQL, Ruby</p>
+            <p><strong>Frameworks/Libraries:</strong> Sinatra, Rails</p>
+            <p><strong>Concepts:</strong> MVC architecture, Object-Oriented Programming, RESTful protocol, CRUD resources, Test Driven Development</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 feature text-center">
+          <span class="icon icon-pricetags"></span>
+          <div class="feature-content">
+            <h5>Retail Background</h5>
+            <p><strong>Experience:</strong> 6 years, co-owner of retail store averaging a half million in annual sales
+            <p><strong>Responsibilites:</strong> day-to-day operations, employee management, marketing, customer service issues, new profit-generating ideas, Notary Public</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 feature text-center">
+          <span class="icon icon-paintbrush"></span>
+          <div class="feature-content">
+            <h5>UX/UI</h5>
+            <p><strong>Coming Soon!</strong></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 feature text-center">
+          <span class="icon icon-speedometer"></span>
+          <div class="feature-content">
+            <h5>Data Analytics</h5>
+            <p><strong>Coming Soon!</strong></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 feature text-center">
+          <span class="icon icon-genius"></span>
+          <div class="feature-content">
+            <h5>eCommerce Products</h5>
+            <p><strong>Coming Soon!</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- features -->
 
-      </div><!-- /panel-group -->
-  </div><!-- /container-fluid -->
+  <section id="works" class="works section no-padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 feature work-animate text-center">
+          <a href="https://deepseakayaks.herokuapp.com" target="_blank"><img src="images/work-1.png" alt="Deep Sea Kayaks"></a>
+          <div class="feature-content">
+            <h5>Deep Sea Kayaks (eCommerce website)</h5>
+            <p><strong>Main Concepts:</strong> User Authentication, user authorization, MVC architecture, RESTful protocol, CRUD resources, security issues review, automatic testing methods, debugging processes, payment and comments/reviews systems</p>
+            <p><strong>Languages:</strong> HTML, CSS, Javascript, Ruby (Rails)</p>
+            <p><small><a href="https://deepseakayaks.herokuapp.com" target="_blank">Click to Visit the Site</a></small></p>
+            <p><a href="https://github.com/eric-an/deepseakayaks" class="btn btn-sml" target="_blank">View on Github</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 feature work-animate text-center">
+          <a href="http://codingbank.herokuapp.com" target="_blank"><img src="images/work-2.png" alt="CodingBank"></a>
+          <div class="feature-content">
+            <h5>CodingBank</h5>
+            <p><strong>Main Concepts:</strong> MVC architecture/separation of concerns: business logic in models, presentation logic in views, user authentication with session info. and prevention of unauthorized access redirection in controllers</p>
+            <p><strong>Languages:</strong> Ruby (Sinatra)</p>
+            <p><small><a href="http://codingbank.herokuapp.com" target="_blank">Click to Visit the Site</a></small></p>
+            <p><a href="https://github.com/eric-an/banking" class="btn btn-sml" target="_blank">View on Github</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 feature work-animate text-center">
+          <a href="http://fundmycause.herokuapp.com" target="_blank"><img src="images/work-3.png" alt="FundMyCause"></a>
+          <div class="feature-content">
+            <h5>FundMyCause</h5>
+            <p><strong>Main Concepts:</strong> Model associations: join table, has_many :through relationship, belongs_to/has_many relationship, association data displayed in views, POST form submission associations</p>
+            <p><strong>Languages:</strong> Ruby (Sinatra)</p>
+            <p><small><a href="http://fundmycause.herokuapp.com" target="_blank">Click to Visit the Site</a></small></p>
+            <p><a href="https://github.com/eric-an/fundmycause" class="btn btn-sml" target="_blank">View on Github</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 feature work-animate text-center">
+          <a href="http://fwitter-clone.herokuapp.com" target="_blank"><img src="images/work-4.png" alt="Fwitter"></a>
+          <div class="feature-content">
+            <h5>Fwitter</h5>
+            <p><strong>Concepts:</strong> User authentication and authorization with helper methods, protected views and redirected routes with unauthorized access, RESTful routes with CRUD resources</p>
+            <p><strong>Languages:</strong> Ruby (Sinatra)</p>
+            <p><small><a href="http://fwitter-clone.herokuapp.com" target="_blank">Click to Visit the Site</a></small></p>
+            <p><a href="https://github.com/eric-an/fwitter" class="btn btn-sml" target="_blank">View on Github</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 feature work-animate text-center">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/wHTfZbNcHpA" frameborder="0" allowfullscreen></iframe>
+          <div class="feature-content">
+            <h5>CLI Music Player</h5>
+            <p><strong>Concepts:</strong> Object-Oriented Programming, object relationships and collaboration, data parsing, CLI design</p>
+            <p><strong>Languages:</strong> Ruby</p>
+            <p><a href="https://github.com/eric-an/music_player" class="btn btn-sml" target="_blank">View on Github</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 feature work-animate text-center">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/p8Bwd9AyURM" frameborder="0" allowfullscreen></iframe>
+          <div class="feature-content">
+            <h5>CLI Tic-Tac-Toe</h5>
+            <p><strong>Concepts:</strong> Object-Oriented Programming, object relationships and collaboration, algorithms, CLI design</p>
+            <p><strong>Languages:</strong> Ruby</p>
+            <p><a href="https://github.com/eric-an/tic-tac-toe-CLI" class="btn btn-sml" target="_blank">View on Github</a></p>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 feature work-animate text-center">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/-VL8fo0_Utk" frameborder="0" allowfullscreen></iframe>
+          <div class="feature-content">
+            <h5>breathe_in Ruby gem</h5>
+            <p><strong>Concepts:</strong> Object-Oriented Programming, object relationships and collaboration, algorithms, data parsing, gem packaging, CLI design</p>
+            <p><strong>Languages:</strong> Ruby</p>
+            <p><a href="https://github.com/eric-an/breathe-in" class="btn btn-sml" target="_blank">View on Github</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- works -->
 
-
-<!-- Contact -->
-  <div class="container-fluid anchor" id="contact">
-    <div class="row" id="contact_height">
-      <div class="col-xs-12 col-s-4 col-md-4">
-        <h2><span class="glyphicon glyphicon-send"></span></h2>
-          <h3>erican@me.com</h3>
-      </div><!-- /col -->
-
-      <div class="col-xs-12 col-s-4 col-md-4">
-        <h2><span class="glyphicon glyphicon-globe"></span></h2>
-          <div class="media_list">
-            <div class="media_link">
-              <a href="https://www.linkedin.com/in/aneric1" target="_blank"><img src="images/linkedin_logo.png" alt="linkedin"></a>
-              <p>LinkedIn</p>
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-6">
+          <div class="person">
+            <img src="images/self-pic.jpg" alt="" class="img-responsive">
+            <div class="person-content">
+              <h4>Eric An</h4>
+              <h5 class="role">erican@me.com</h5>
             </div>
-            <div class="media_link">  
-              <a href="https://github.com/eric-an" target="_blank"><img src="images/github_logo2.png" alt="github"></a>
-              <p>GitHub</p>
-            </div>
-            <div class="media_link">    
-              <a href="https://twitter.com/epically_eric" target="_blank"><img src="images/twitter_logo.png" alt="twitter"></a>
-              <p>Twitter</p>
-            </div>
-            <div class="media_link">  
-              <a href="http://eric-an.github.io/blog/" target="_blank"><img src="images/blog_logo.png" alt="blog"></a>
-              <p>Blog</p>
-            </div>
-        </div><!-- /media_list -->    
-      </div><!-- /col -->
+          </div><!-- person -->
+        </div>
+        <div class="col-md-7 col-sm-6">
+          <div class="person bio">
+            <div class="person-content">
+              <h4>About Me</h4>
+              <h5 class="role">An Entrepreneur to Developer to eCommerce Specialist</h5>
+              <p>I went straight from graduating college with an Economics degree to running a retail business. After a fruitful run of packaging thousands of boxes and sorting hundreds of thousands of pieces of mail, I found my way into web development a year later.</p>
 
-      <div class="col-xs-12 col-s-4 col-md-4">
-        <h2><span class="glyphicon glyphicon-briefcase"></span></h2>
+              <p>In a short time, I gained enough knowledge to be hired as a mentor to students just starting their web development education. As I delved deeper into coding, I realized I enjoyed the data analysis that was possible with programming. (I make spreadsheets for fun!)</p>
+
+              <p>My goal is to become a multi-faceted developer who has the UX/UI chops to make a website look and function efficiently for the company, while also possessing skillsets in various eCommerce platforms and services to effectively analyze data and produce actionable results.</p>
+            </div>
+            <ul class="social-icons clearfix">
+              <li><a href="https://www.linkedin.com/in/aneric1" target="_blank"><span class="fa fa-linkedin" title="LinkedIn"></span></a></li>
+              <li><a href="https://github.com/eric-an" target="_blank"><span class="fa fa-github" title="GitHub"></span></a></li>
+              <li><a href="https://twitter.com/epically_eric" target="_blank"><span class="fa fa-twitter" title="Twitter"></span></a></li>
+              <li><a href="http://eric-an.github.io/blog/" target="_blank"><span class="fa fa-bold" title="Blog"></span></a></li>      
+            </ul>
+          </div><!-- person -->
+        </div>
+    </div>
+  </div>
+    <div id="resume" class="container download">
+      <div class="col-md-8 col-md-offset-2 text-center">
         <!-- Modal -->
         <div class="modal-button">
-          <button class="btn btn-primary" data-toggle="modal" data-target=".open_resume">Print my Resume</button>
+          <button class="resume-click btn btn-large" data-toggle="modal" data-target=".open_resume">Download my Resume</button>
         </div><!-- /modal-button -->
 
         <div class="modal fade open_resume" tabindex="-1" role="dialog" aria-labelledby="myResume" aria-hidden="true">
@@ -287,23 +243,36 @@
             </div><!-- /modal-content -->
           </div><!-- /modal-dialog -->
         </div><!-- /modal -->
-      </div><!-- /col -->
-    </div><!-- /row -->  
-  </div><!-- /container-fluid -->
+      </div>
+    </div>
+  </section><!-- about -->
 
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="col-md-12">
+          <p>Copyright © 2016 Eric An</p>
+        </div>
+      </div>
+    </div>
+  </footer><!-- footer -->
 
-  <!-- Footer -->
-  <footer class="container-fluid" id="footer_info">
-     <p>&copy; Eric An 2016</p>
-  </footer><!-- /container-fluid -->
-
-  <!--jQuery Script-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-  <!-- Bootstrap core JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-  <!-- Scripts -->
-  <script type= "text/javascript" src="js/index.js"></script> 
-
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/main.js"></script>
+    
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     
+      ga('create', 'UA-XXXX-X');
+      ga('send', 'pageview');
+  </script>
 </body>
+</html>
