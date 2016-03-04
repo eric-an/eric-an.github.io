@@ -13,21 +13,6 @@ $(document).ready(function() {
 	});
 
 	// Waypoints
-	// $('.banner-head').waypoint(function() {
-	// 	$('.banner-head').addClass('animated bounceIn');
-	// }, {
-	// 	offset: '75%'
-	// });
-	$('.banner-body').waypoint(function() {
-		$('.banner-body').addClass('animated bounce');
-	}, {
-		offset: '75%'
-	});
-	$('.banner-info').waypoint(function() {
-		$('.banner-info').addClass('animated fadeInUp');
-	}, {
-		offset: '75%'
-	});
 	$('.work-animate').waypoint(function() {
 		$('.work-animate').addClass('animated fadeIn');
 	}, {
