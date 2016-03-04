@@ -1,3 +1,6 @@
+@media screen and (min-width: 1250px) {
+    .work-animate {
+      height: 480px; } } 
 @media screen and (max-width: 1024px) {
   #header .header-content {
     width: 90%; }
@@ -40,6 +43,11 @@
   
   .flex-control-nav {
     bottom: 20px; } }
+@media screen and (max-width: 993px) {
+    .works img {
+    max-width: 50%; }
+    .work-animate {
+      height: 455px; } }   
 @media screen and (max-width: 768px) {
   .banner-text {
     padding-top: 30%; }
@@ -60,4 +68,4 @@
       font-size: 32px; } }
 @media screen and (max-width: 320px) {
   .banner-text {
-    padding-top: 55%; }
+    padding-top: 55%; } }

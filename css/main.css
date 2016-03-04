@@ -3,10 +3,6 @@
 /* ==========================================================================
 Typography
 ========================================================================== */
-img {
-  max-width: 70%;
-}
-
 p {
   font-size: 14px;
   line-height: 22.4px;
@@ -294,7 +290,7 @@ iframe {
 	$Features
 ========================================================================== */
 .feature {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
   .feature-content {
     padding: 0 15px;
     margin-top: 30px; }
@@ -314,8 +310,10 @@ iframe {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover; }
+  .works img {
+    max-width: 70%; }
 .work-animate {
-  height: 440px;
+  height: 455px;
   overflow: hidden;
   position: relative;
   visibility: hidden; }
